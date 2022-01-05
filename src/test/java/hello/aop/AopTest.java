@@ -18,7 +18,8 @@ import static org.assertj.core.api.Assertions.*;
 //@Import(AspectV2.class) //스프링 빈으로 등록
 //@Import(AspectV3.class) //스프링 빈으로 등록
 //@Import(AspectV4Pointcut.class) //스프링 빈으로 등록
-@Import({AspectV5Order.LogAspect.class, AspectV5Order.TransactionAspect.class}) //스프링 빈으로 등록
+//@Import({AspectV5Order.LogAspect.class, AspectV5Order.TransactionAspect.class}) //스프링 빈으로 등록
+@Import(AspectV6Advice.class) //스프링 빈으로 등록
 public class AopTest {
 
     @Autowired
