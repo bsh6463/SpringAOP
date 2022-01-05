@@ -5,6 +5,7 @@ import hello.aop.order.OrderService;
 import hello.aop.order.aop.AspectV1;
 import hello.aop.order.aop.AspectV2;
 import hello.aop.order.aop.AspectV3;
+import hello.aop.order.aop.AspectV4Pointcut;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.aop.support.AopUtils;
@@ -18,7 +19,8 @@ import static org.assertj.core.api.Assertions.*;
 @SpringBootTest
 //@Import(AspectV1.class) //스프링 빈으로 등록
 //@Import(AspectV2.class) //스프링 빈으로 등록
-@Import(AspectV3.class) //스프링 빈으로 등록
+//@Import(AspectV3.class) //스프링 빈으로 등록
+@Import(AspectV4Pointcut.class) //스프링 빈으로 등록
 public class AopTest {
 
     @Autowired
